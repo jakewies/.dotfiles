@@ -36,6 +36,7 @@ set scrolloff=8
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'gruvbox-community/gruvbox'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
