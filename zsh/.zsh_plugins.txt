@@ -1,0 +1,18 @@
+# start
+lukechilds/zsh-nvm
+
+rupa/z
+
+robbyrussell/oh-my-zsh path:plugins/colored-man-pages
+robbyrussell/oh-my-zsh path:plugins/command-not-found
+robbyrussell/oh-my-zsh path:plugins/git
+robbyrussell/oh-my-zsh path:plugins/git-extras
+robbyrussell/oh-my-zsh path:plugins/node
+
+# zsh-async must load before pure
+mafredri/zsh-async
+sindresorhus/pure
+
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+zsh-users/zsh-syntax-highlighting
