@@ -20,10 +20,17 @@ alias list-npm-globals='npm list -g --depth=0'
 alias rm='trash'
 # use neovim instead of vim
 alias vim='nvim'
+# checkout branch using fzf
+alias gcob='git branch | fzf | xargs git checkout'
+# open vim config from anywhere
+alias vimrc='vim ${HOME}/.config/nvim/init.vim'
 
 # DIRCOLORS (MacOS)
 export CLICOLOR=1
 export LSCOLORS=FxFhcxdxbxegedabagacad
+
+# FZF
+export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --margin=1 --padding=1"
 
 # PATH
 # export PATH=${PATH}:/usr/local/go/bin
