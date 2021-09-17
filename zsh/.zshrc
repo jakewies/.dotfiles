@@ -30,7 +30,10 @@ export CLICOLOR=1
 export LSCOLORS=FxFhcxdxbxegedabagacad
 
 # FZF
+export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
 export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --margin=1 --padding=1"
+# binds <C-p> to open selected file in vim
+bindkey -s '^p' 'vim $(fzf)\n'
 
 # PATH
 # export PATH=${PATH}:/usr/local/go/bin
@@ -42,3 +45,4 @@ export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --margin=1 --pad
 # used because of flexshopper/payment-plugin-3
 # https://flexshopper.atlassian.net/wiki/spaces/DEV/pages/1377697814/Getting+Started+pp3
 eval "$(direnv hook zsh)"
+
