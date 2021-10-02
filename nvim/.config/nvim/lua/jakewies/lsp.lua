@@ -3,6 +3,7 @@ local cmp_nvim_lsp = require('cmp_nvim_lsp')
 local lspkind = require('lspkind')
 local luasnip = require('luasnip')
 local nvim_lsp = require('lspconfig')
+local null_ls = require('null-ls')
 
 
 --
@@ -35,6 +36,10 @@ local on_attach  = function(client, bufnr)
     buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
     buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
     buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+
+    -- Disable Autoformat
+    client.resolved_capabilities.document_formatting = false
+    client.resolved_capabilities.document_range_formatting = false
 end
 
 -- nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
@@ -53,6 +58,35 @@ for _, lsp in ipairs(servers) do
         }
     }
 end
+
+
+--
+-- Null-ls
+--
+
+null_ls.config({
+    sources = {
+        -- prettierd is installed globally via npm
+        null_ls.builtins.formatting.prettierd
+    }
+})
+
+-- null-ls is a general purpose language server that doesn't need
+-- the same config as actual language servers like tsserver, so
+-- setup is a little different.
+nvim_lsp['null-ls'].setup({
+    on_attach = function(client, bufnr)
+        -- Autoformat
+        if client.resolved_capabilities.document_formatting then
+           vim.cmd [[augroup Format]]
+           vim.cmd [[autocmd! * <buffer>]]
+           vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
+           vim.cmd [[augroup END]]
+        end
+        -- call local on_attach
+        return on_attach(client, bufnr)
+    end
+})
 
 
 --

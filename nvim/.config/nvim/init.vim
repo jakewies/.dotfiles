@@ -28,6 +28,8 @@ set hidden
 set noerrorbells
 set scrolloff=8
 set noshowmode
+set updatetime=250 
+set encoding=UTF-8
 
 
 " --- Plugins
@@ -35,28 +37,32 @@ set noshowmode
 call plug#begin('~/.config/nvim/plugged')
 
 " General
-Plug 'neovim/nvim-lspconfig'          " Lsp
 Plug 'sainnhe/gruvbox-material'       " Color scheme
 Plug 'itchyny/lightline.vim'          " Vim status line
 Plug 'edkolev/tmuxline.vim'           " Tmux status line
-Plug 'machakann/vim-highlightedyank'  " Highlight yanked text in vim
 Plug 'kyazdani42/nvim-web-devicons'   " Devicons
+Plug 'machakann/vim-highlightedyank'  " Highlight yanked text in vim
+" Lsp
+Plug 'neovim/nvim-lspconfig'     
+Plug 'jose-elias-alvarez/null-ls.nvim'
+" Autocompletion
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'L3MON4D3/LuaSnip'               " completion snippets
+Plug 'saadparwaiz1/cmp_luasnip'       " completion snippets
+Plug 'onsails/lspkind-nvim'           " completion icons
+" Treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'lewis6991/gitsigns.nvim'
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-" Autocompletion
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/nvim-cmp'
-" Autocompletion snippets
-Plug 'L3MON4D3/LuaSnip'
-Plug 'saadparwaiz1/cmp_luasnip'
-" Autocompletion icons
-Plug 'onsails/lspkind-nvim'
 
 call plug#end()
 
-set encoding=UTF-8
 
 " --- Colors
 
