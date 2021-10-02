@@ -1,6 +1,7 @@
 " --- General 
 
 syntax on
+
 set tabstop=4 
 set softtabstop=4
 set shiftwidth=4
@@ -26,6 +27,7 @@ set scrolloff=8
 set noshowmode
 set updatetime=250 
 set encoding=UTF-8
+
 let g:netrw_banner=0
 
 
