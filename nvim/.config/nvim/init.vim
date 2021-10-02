@@ -66,12 +66,13 @@ call plug#end()
 
 " --- Colors
 
-colorscheme gruvbox-material
-
-let g:gruvbox_material_background = 'medium'
 
 set background=dark
 set termguicolors
+
+colorscheme gruvbox-material
+
+let g:gruvbox_material_background = 'medium'
 
 
 " --- Lua config
