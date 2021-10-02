@@ -66,7 +66,6 @@ call plug#end()
 
 " --- Colors
 
-
 set background=dark
 set termguicolors
 
