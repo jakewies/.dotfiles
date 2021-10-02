@@ -1,7 +1,3 @@
-let mapleader = " "
-let g:netrw_banner=0
-
-
 " --- General 
 
 syntax on
@@ -30,6 +26,7 @@ set scrolloff=8
 set noshowmode
 set updatetime=250 
 set encoding=UTF-8
+let g:netrw_banner=0
 
 
 " --- Plugins
@@ -64,6 +61,10 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 call plug#end()
 
 
+" --- Plugin config
+lua require('jakewies')
+
+
 " --- Colors
 
 set background=dark
@@ -74,12 +75,9 @@ colorscheme gruvbox-material
 let g:gruvbox_material_background = 'medium'
 
 
-" --- Lua config
-
-lua require('jakewies')
-
-
 " --- Remaps
+
+let mapleader = " "
 
 nnoremap <leader>h :wincmd h<Cr>
 nnoremap <leader>j :wincmd j<Cr>
