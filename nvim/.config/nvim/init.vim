@@ -17,16 +17,17 @@ set undodir=~/.config/nvim/undodir
 set undofile
 set incsearch
 set nohlsearch
+set ignorecase
 set smartcase
 set nowrap
 set splitbelow
 set splitright
 set hidden
-set noerrorbells
 set scrolloff=8
 set noshowmode
 set updatetime=250 
 set encoding=UTF-8
+set mouse=a
 
 let g:netrw_banner=0
 
