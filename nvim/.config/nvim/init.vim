@@ -42,6 +42,7 @@ Plug 'itchyny/lightline.vim'          " Vim status line
 Plug 'edkolev/tmuxline.vim'           " Tmux status line
 Plug 'kyazdani42/nvim-web-devicons'   " Devicons
 Plug 'machakann/vim-highlightedyank'  " Highlight yanked text in vim
+Plug 'akinsho/bufferline.nvim'
 " Lsp
 Plug 'neovim/nvim-lspconfig'     
 Plug 'jose-elias-alvarez/null-ls.nvim'
