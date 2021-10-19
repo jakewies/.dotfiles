@@ -46,8 +46,8 @@ Plug 'machakann/vim-highlightedyank'  " Highlight yanked text in vim
 Plug 'neovim/nvim-lspconfig'     
 Plug 'jose-elias-alvarez/null-ls.nvim'
 " Autocompletion
-Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'L3MON4D3/LuaSnip'               " completion snippets
 Plug 'saadparwaiz1/cmp_luasnip'       " completion snippets
 Plug 'onsails/lspkind-nvim'           " completion icons
@@ -88,4 +88,3 @@ nnoremap <leader>k :wincmd k<Cr>
 nnoremap <leader>l :wincmd l<Cr>
 nnoremap <C-b> :Lexplore <bar> :vertical resize 30<Cr>
 nnoremap <C-p> :Telescope find_files<Cr>
-
