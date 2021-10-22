@@ -16,6 +16,8 @@ nix-env -iA \
 	nixpkgs.fzf \
 	nixpkgs.ripgrep \
 	nixpkgs.bat \
+	nixpkgs.gnumake \
+	nixpkgs.gcc \
 	nixpkgs.direnv
 
 # stow dotfiles
