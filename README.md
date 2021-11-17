@@ -1,12 +1,9 @@
 # .dotfiles
 
-## Assumptions
+1. Clone this repository
+2. Run `install.sh`
+3. Open up new window to initiate `zsh` shell
 
-#### zsh
+### Current issues
 
-1. `nvm` exists and is in the home directory
-2. `.zsh_plugins.sh` exists and is in the home directory 
-
-#### nvim
-
-1. vim plugins are installed to the `.config/nvim/plugged` directory
+- installing `nvim` plugins in `--headless` causes error output, but doesn't break installation
