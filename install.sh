@@ -26,16 +26,14 @@ stow nvim
 stow tmux
 stow zsh
 
-# bundle zsh plugins 
-antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
-
-# Use kitty terminal on MacOS
-[ `uname -s` = 'Darwin' ] && stow kitty
-
-# need to add nix-profile stuff into .zshrc
-
 # add zsh as a login shell
 command -v zsh | sudo tee -a /etc/shells
 
 # use zsh as default shell
 sudo chsh -s $(which zsh) $USER
+
+# bundle zsh plugins 
+antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
+
+# Use kitty terminal on MacOS
+[ `uname -s` = 'Darwin' ] && stow kitty
