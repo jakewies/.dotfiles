@@ -67,3 +67,6 @@ export BAT_THEME="gruvbox-dark"
 
 # cd to directory then ls
 cdd() { builtin cd "$@" && ls; }
+
+# nix
+if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
