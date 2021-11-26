@@ -39,7 +39,6 @@ call plug#begin('~/.config/nvim/plugged')
 " General
 Plug 'sainnhe/gruvbox-material'       " Color scheme
 Plug 'itchyny/lightline.vim'          " Vim status line
-Plug 'edkolev/tmuxline.vim'           " Tmux status line
 Plug 'kyazdani42/nvim-web-devicons'   " Devicons
 Plug 'machakann/vim-highlightedyank'  " Highlight yanked text in vim
 Plug 'akinsho/bufferline.nvim'
