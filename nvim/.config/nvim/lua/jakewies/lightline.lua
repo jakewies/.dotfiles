@@ -1,5 +1,5 @@
 vim.g.lightline = {
-    colorscheme = 'gruvbox_material',
+    colorscheme = 'tokyonight',
     active = { 
         left = { 
             { 'mode', 'paste' }, 
