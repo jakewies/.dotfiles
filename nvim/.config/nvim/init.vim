@@ -40,7 +40,6 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'nvim-lualine/lualine.nvim'     " Vim status line
 Plug 'kyazdani42/nvim-web-devicons'  " Devicons
 Plug 'machakann/vim-highlightedyank' " Highlight yanked text in vim
-Plug 'akinsho/bufferline.nvim'
 " Lsp
 Plug 'neovim/nvim-lspconfig'     
 Plug 'jose-elias-alvarez/null-ls.nvim'
@@ -70,7 +69,6 @@ lua require('jakewies')
 " --- Colors
 
 set background=dark
-
 colorscheme tokyonight
 
 
