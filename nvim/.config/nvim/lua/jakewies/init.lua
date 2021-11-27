@@ -1,5 +1,5 @@
 require('jakewies.gitsigns')
-require('jakewies.lightline')
+require('jakewies.lualine')
 require('jakewies.lsp')
 require('jakewies.telescope')
 require('jakewies.treesitter')
