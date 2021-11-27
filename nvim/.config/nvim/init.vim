@@ -1,5 +1,6 @@
 " --- General 
 
+set termguicolors
 set tabstop=4 
 set softtabstop=4
 set shiftwidth=4
@@ -35,7 +36,7 @@ let g:netrw_banner=0
 call plug#begin('~/.config/nvim/plugged')
 
 " General
-Plug 'sainnhe/gruvbox-material'       " Color scheme
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'itchyny/lightline.vim'          " Vim status line
 Plug 'kyazdani42/nvim-web-devicons'   " Devicons
 Plug 'machakann/vim-highlightedyank'  " Highlight yanked text in vim
@@ -69,11 +70,8 @@ lua require('jakewies')
 " --- Colors
 
 set background=dark
-set termguicolors
 
-colorscheme gruvbox-material
-
-let g:gruvbox_material_background = 'medium'
+colorscheme tokyonight
 
 
 " --- Remaps
