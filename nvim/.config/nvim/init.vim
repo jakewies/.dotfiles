@@ -36,10 +36,11 @@ let g:netrw_banner=0
 call plug#begin('~/.config/nvim/plugged')
 
 " General
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-Plug 'nvim-lualine/lualine.nvim'     " Vim status line
 Plug 'kyazdani42/nvim-web-devicons'  " Devicons
+Plug 'nvim-lualine/lualine.nvim'     " Vim status line
 Plug 'machakann/vim-highlightedyank' " Highlight yanked text in vim
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Lsp
 Plug 'neovim/nvim-lspconfig'     
 Plug 'jose-elias-alvarez/null-ls.nvim'
@@ -49,8 +50,6 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'L3MON4D3/LuaSnip'              " completion snippets
 Plug 'saadparwaiz1/cmp_luasnip'      " completion snippets
 Plug 'onsails/lspkind-nvim'          " completion icons
-" Treesitter
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
