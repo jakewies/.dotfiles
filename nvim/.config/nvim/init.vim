@@ -39,6 +39,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'kyazdani42/nvim-web-devicons'  " Devicons
 Plug 'nvim-lualine/lualine.nvim'     " Vim status line
 Plug 'machakann/vim-highlightedyank' " Highlight yanked text in vim
+Plug 'kyazdani42/nvim-tree.lua'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Lsp
@@ -79,5 +80,5 @@ nnoremap <leader>h :wincmd h<Cr>
 nnoremap <leader>j :wincmd j<Cr>
 nnoremap <leader>k :wincmd k<Cr>
 nnoremap <leader>l :wincmd l<Cr>
-nnoremap <C-b> :Lexplore <bar> :vertical resize 30<Cr>
 nnoremap <C-p> :Telescope find_files<Cr>
+nnoremap <C-n> :NvimTreeToggle<Cr>
