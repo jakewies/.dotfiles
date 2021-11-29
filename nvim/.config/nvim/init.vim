@@ -37,7 +37,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'kyazdani42/nvim-web-devicons'  " Devicons
 Plug 'nvim-lualine/lualine.nvim'     " Vim status line
 Plug 'machakann/vim-highlightedyank' " Highlight yanked text in vim
-Plug 'kyazdani42/nvim-tree.lua'
+Plug 'kyazdani42/nvim-tree.lua'      " File explorer
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Lsp
