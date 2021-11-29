@@ -9,7 +9,7 @@ set smartindent
 set number
 set numberwidth=4
 set relativenumber
-set signcolumn=number
+set signcolumn=yes
 set noswapfile
 set nobackup
 set undodir=~/.config/nvim/undodir
