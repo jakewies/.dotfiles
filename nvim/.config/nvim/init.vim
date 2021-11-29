@@ -36,6 +36,7 @@ call plug#begin('~/.config/nvim/plugged')
 " General
 Plug 'kyazdani42/nvim-web-devicons'                " Devicons
 Plug 'nvim-lualine/lualine.nvim'                   " Status line
+Plug 'akinsho/bufferline.nvim'                     " Buffers
 Plug 'machakann/vim-highlightedyank'               " Highlight yanked text
 Plug 'kyazdani42/nvim-tree.lua'                    " File explorer
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' } " Color scheme
