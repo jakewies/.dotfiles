@@ -28,8 +28,6 @@ set updatetime=250
 set encoding=UTF-8
 set mouse=a
 
-let g:netrw_banner=0
-
 
 " --- Plugins
 
