@@ -7,7 +7,7 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set number
-set numberwidth=4
+set numberwidth=1
 set relativenumber
 set signcolumn=yes
 set noswapfile
