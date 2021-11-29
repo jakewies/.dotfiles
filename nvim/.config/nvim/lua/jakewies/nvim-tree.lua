@@ -6,3 +6,12 @@ require('nvim-tree').setup {
         hide_root_folder = true
     }
 }
+
+-- This highlight override is based on the tokyonight
+-- theme. Changing the theme will cause NvimTreeEndOfBuffer to break
+vim.cmd[[
+    augroup NvimTreeHighlightGroups
+        autocmd!
+        autocmd BufEnter,ColorScheme * highlight NvimTreeEndOfBuffer guifg=#1f2335
+    augroup END
+]]
