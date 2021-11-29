@@ -2,8 +2,9 @@
 vim.g.nvim_tree_indent_markers = 1 -- this option shows indent markers when folders are open
 
 require('nvim-tree').setup {
+    auto_close = true,
     view = {
-        hide_root_folder = true
+        auto_resize = true,
     }
 }
 
