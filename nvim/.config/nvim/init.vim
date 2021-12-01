@@ -82,6 +82,7 @@ nnoremap <leader>df :lua require('jakewies.telescope').search_dotfiles()<Cr>
 nnoremap <leader>b :NvimTreeToggle<Cr>
 nnoremap <silent><leader>[ :BufferLineCyclePrev<Cr>
 nnoremap <silent><leader>] :BufferLineCycleNext<Cr>
+nnoremap <silent><leader>q :bdelete<Cr>
 
 
 " --- Autocommands
