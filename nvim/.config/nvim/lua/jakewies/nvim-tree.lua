@@ -8,6 +8,8 @@ require('nvim-tree').setup {
     }
 }
 
+vim.api.nvim_set_keymap('n', '<Leader>n', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
+
 -- This highlight override is based on the tokyonight
 -- theme. Changing the theme will cause NvimTreeEndOfBuffer to break
 vim.cmd[[

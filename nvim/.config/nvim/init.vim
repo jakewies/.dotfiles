@@ -1,5 +1,7 @@
 " --- General 
 
+let mapleader = " "
+
 set termguicolors
 set tabstop=4 
 set softtabstop=4
@@ -71,15 +73,10 @@ colorscheme tokyonight
 
 " --- Remaps
 
-let mapleader = " "
-
 nnoremap <leader>h :wincmd h<Cr>
 nnoremap <leader>j :wincmd j<Cr>
 nnoremap <leader>k :wincmd k<Cr>
 nnoremap <leader>l :wincmd l<Cr>
-nnoremap <leader>p :lua require('jakewies.telescope').project_files()<Cr>
-nnoremap <leader>df :lua require('jakewies.telescope').search_dotfiles()<Cr>
-nnoremap <leader>b :NvimTreeToggle<Cr>
 nnoremap <silent><leader>[ :BufferLineCyclePrev<Cr>
 nnoremap <silent><leader>] :BufferLineCycleNext<Cr>
 nnoremap <silent><leader>q :bdelete<Cr>
