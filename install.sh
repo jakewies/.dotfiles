@@ -4,39 +4,50 @@ curl -L https://nixos.org/nix/install | sh
 # source nix
 . ~/.nix-profile/etc/profile.d/nix.sh
 
-# install packages
-nix-env -iA \
-	nixpkgs.zsh \
-	nixpkgs.antibody \
-	nixpkgs.git \
-	nixpkgs.neovim \
-	nixpkgs.tmux \
-	nixpkgs.stow \
-	nixpkgs.yarn \
-	nixpkgs.fzf \
-	nixpkgs.ripgrep \
-	nixpkgs.bat \
-	nixpkgs.gnumake \
-	nixpkgs.gcc \
-	nixpkgs.direnv
+echo '🚀 Install packages'
+packages=(
+	antibody
+	bat
+	direnv
+	fzf
+	gcc
+	git
+	gnumake
+	neovim
+	ripgrep
+	stow
+	tmux
+	yarn
+)
+for package in ${packages[@]}
+do 
+	echo "📦 Installing $package"
+	nix-env -iA nixpkgs.$package
+done
 
-# stow dotfiles
-stow git
-stow nvim
-stow tmux
-stow zsh
+echo "🚀 Stow dirs"
+stow_dirs=(
+	git
+	nvim
+	tmux
+	zsh
+)
+for stow_dir in ${stow_dirs[@]}
+do 
+	stow $stow_dir
+done
 
-# add zsh as a login shell
+echo "🚀 Configure "ZSH as default shell"
 command -v zsh | sudo tee -a /etc/shells
-
-# use zsh as default shell
 sudo chsh -s $(which zsh) $USER
 
-# bundle zsh plugins 
+echo "🎁 Bundle antibody plugins"
 antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
-# install neovim plugins
+echo "🔨 Install nvim plugins"
 nvim --headless +PlugInstall +qall
 
 # Use kitty terminal on MacOS
 [ `uname -s` = 'Darwin' ] && stow kitty
+
+zsh 
