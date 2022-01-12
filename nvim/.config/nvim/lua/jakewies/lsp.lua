@@ -63,17 +63,14 @@ end
 -- Null-ls
 --
 
-null_ls.config({
-    sources = {
-        -- prettierd is installed globally via npm
-        null_ls.builtins.formatting.prettierd
-    }
-})
-
 -- null-ls is a general purpose language server that doesn't need
 -- the same config as actual language servers like tsserver, so
 -- setup is a little different.
-nvim_lsp['null-ls'].setup({
+null_ls.setup({
+    sources = {
+        -- prettierd is installed globally via npm
+        null_ls.builtins.formatting.prettierd
+    },
     on_attach = function(client, bufnr)
         -- Autoformat
         if client.resolved_capabilities.document_formatting then
