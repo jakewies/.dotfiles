@@ -14,10 +14,8 @@ source ${HOME}/.zsh_plugins.sh
 
 # Bundle zsh plugins via antibody
 alias update-antibody='antibody bundle < $HOME/.zsh_plugins.txt > $HOME/.zsh_plugins.sh'
-# Colored 'ls' MacOS
+# Better 'ls' in MacOS
 alias ls='ls -al'
-# Homebrew alias for daily management (MacOS)
-alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 # List out all globally installed npm packages
 alias list-npm-globals='npm list -g --depth=0'
 # Adds better handling for `rm` using trash-cli
