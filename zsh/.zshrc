@@ -34,7 +34,6 @@ alias cat='bat'
 
 # DIRCOLORS (MacOS)
 export CLICOLOR=1
-export LSCOLORS=FxFhcxdxbxegedabagacad
 
 # FZF
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
