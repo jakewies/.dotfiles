@@ -45,8 +45,5 @@ export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --margin=1 --pad
 
 export BAT_THEME="gruvbox-dark"
 
-# cd to directory then ls
-cdd() { builtin cd "$@" && ls; }
-
 # nix
 if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
