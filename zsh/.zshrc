@@ -43,16 +43,6 @@ export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --margin=1 --pad
 # export PATH=${PATH}:/usr/local/go/bin
 # export PATH=${PATH}:${HOME}/go/bin
 
-# direnv package
-# https://direnv.net/
-# installed via homebrew
-# used because of flexshopper/payment-plugin-3
-# https://flexshopper.atlassian.net/wiki/spaces/DEV/pages/1377697814/Getting+Started+pp3
-eval "$(direnv hook zsh)"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 export BAT_THEME="gruvbox-dark"
 
 # cd to directory then ls
