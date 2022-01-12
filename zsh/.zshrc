@@ -39,10 +39,6 @@ export CLICOLOR=1
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
 export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --margin=1 --padding=1"
 
-# <C-f> to search most common projects (personal, work) and 
-# open selected in a tmux session. source: The Primeagen
-bindkey -s ^p "tmux-sessionizer\n"
-
 # PATH
 # export PATH=${PATH}:/usr/local/go/bin
 # export PATH=${PATH}:${HOME}/go/bin
