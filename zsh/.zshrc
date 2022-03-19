@@ -14,8 +14,6 @@ source ${HOME}/.zsh_plugins.sh
 
 # Bundle zsh plugins via antibody
 alias update-antibody='antibody bundle < $HOME/.zsh_plugins.txt > $HOME/.zsh_plugins.sh'
-# Better 'ls' in MacOS
-alias ls='ls -al'
 # List out all globally installed npm packages
 alias list-npm-globals='npm list -g --depth=0'
 # Adds better handling for `rm` using trash-cli
@@ -31,6 +29,8 @@ alias gcob='git branch | fzf | xargs git checkout'
 alias vimrc='vim ${HOME}/.config/nvim/init.vim'
 # cat -> bat
 alias cat='bat'
+# colored ls output
+alias ls='ls -al --color'
 
 # DIRCOLORS (MacOS)
 export CLICOLOR=1
